@@ -3,17 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-.svg-builds path {
+ 
+
+.builds-list path {
     fill: #05ffff00;
     stroke: #05ffff00;
     cursor: pointer;
+    transition: .3s;
 }
-.svg-builds path:hover {
+
+.builds-list path:hover {
     fill: #05FFFF;
     stroke: #05FFFF;
     stroke-width: 3;
     fill-opacity: .3;
 }
+
+.builds-list .sales path {
+    fill: #d104045c;
+    stroke: #fb0000;
+    cursor: no-drop;
+}
+
+.builds-list .sales path:hover {
+    fill: #d10404a1;
+    stroke: #fb0000;
+    fill-opacity: 1;
+}
+
 .builds-info {
     padding: 48px;
     position: absolute;
@@ -21,14 +38,19 @@
     bottom: 15px;
     border-radius: 10px;
 }
+
 .builds-info-title {
     margin-bottom: 24px;
 }
+
 .info-list {
     padding: 24px;
     list-style: none;
     border-radius: 10px;
 }
+
 .list-item{
     margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
 }
